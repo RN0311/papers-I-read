@@ -20,8 +20,33 @@ Students and scientist can easily explore the state of the art and work together
 contributing their own algorithms and experiments.<br >
 They can save time, because OpenML assits in many routine and tedious duties: finding datasets, tasks and 
 prior results, setting up experiments and organizing all experiments for further analysis.<br >
+###### Overview
+> OpenML R package is an interface to interact with the OpenML server directly from within R.Users can retireve datasets, tasks, flows and runs from the server from within R.<br >
+To interact with the OpenML server, users need to authenticate using an API key, asecret string of characters that uniquely identifies the user.The R package can be easily installed and configured as follows:
+```R
+install.packages("OpenML")
+library("OpenML")
+saveOMLConfig(apikey  = "YOUR_API_KEY")
+```
+> A list of all datasets and tasks that are available on the OpenML server can be obtained using ```listOMLDataSets``` and 
+```listOMLTasks``` function respectively.In the example, below a list of all supervised classification tasks based on the data sets having two classes for the target feature, between 500 and 999 instances, at most 100 features and no missing values is shown:
+```R
+tasks = listOMLTasks(task.type = "Supervised Classification",
+number.of.classes = 2,number.of.instances = c(500,999),
+number.of.features = c(1,100), number.of.missing.values = 0)
+```
+```R
+tasks[1:2, c("task.id","name","number.of.instances","number.of.features")]
+```
+> The ```tagOMLObject``` function is able to tag datasets, tasks, flows and runs with a user-defined string, so that 
+finding OpenML objects with a specific tag becomes easier.<br >
+For example, the task with ID1 can be tagged as follows:
+```R 
+tagOMLObject(id = 1, object = "task", tags = "test-tagging")
+```
+> To retrieve a list of objects with a given tag, the tag argument of the listing functions can be used.
 
-###### Outlook
+###### Conclusion
 > OpenML is an online platform for open machine learning that is aimed at connecting 
 researchers who deal with any part of the machine learning workflow. The openML platform 
 automates the sahring of machine learning tasks and experiments through the tools that scientists 
