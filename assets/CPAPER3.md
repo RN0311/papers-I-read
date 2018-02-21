@@ -24,7 +24,7 @@ They can save time, because OpenML assits in many routine and tedious duties: fi
 prior results, setting up experiments and organizing all experiments for further analysis.<br >
 
 ###### Outlook
-OpenML is an online platform for open machine learning that is aimed at connecting 
+> OpenML is an online platform for open machine learning that is aimed at connecting 
 researchers who deal with any part of the machine learning workflow. The openML platform 
 automates the sahring of machine learning tasks and experiments through the tools that scientists 
 are already using such as R.
