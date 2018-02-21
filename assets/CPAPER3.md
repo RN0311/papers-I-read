@@ -10,8 +10,7 @@ defining what is to be learned.They define which input data are given and which
 output data should be obtained.<br >
 **Flows** : They are implementations of single machine learning algorithms or whole 
 workflows that solve a specific task, eg. a random forest implementation is a flow that 
-can be used to solve a classification or regression task.
-<br >
+can be used to solve a classification or regression task.<br >
 **Runs**: They are the resullt of executing flows, optionally with preset hyperparameter 
 values, on tasks and contain all expected outputs and evaluations of these outputs.(eg. accuracy of pred
 ictions)
