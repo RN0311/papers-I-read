@@ -4,6 +4,6 @@
 related summaries and notes.*
 
 ## List of papers
-* *Task Parallelism and Synchronization: An Overview of Explicit Parallel Programming Languages*
+* *Data Centric Performance Measurement Techniques for Chapel Programs*
 * *Chapel: Cascade High-Productivity Language An Overview of the Chapel Parallel Programming Model∗*
 * *OpenML: An R Package to Connect to the Machine Learning Platform OpenML*
