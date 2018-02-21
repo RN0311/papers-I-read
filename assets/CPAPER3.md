@@ -12,8 +12,7 @@ output data should be obtained.<br >
 workflows that solve a specific task, eg. a random forest implementation is a flow that 
 can be used to solve a classification or regression task.<br >
 **Runs**: They are the resullt of executing flows, optionally with preset hyperparameter 
-values, on tasks and contain all expected outputs and evaluations of these outputs.(eg. accuracy of pred
-ictions)
+values, on tasks and contain all expected outputs and evaluations of these outputs.(eg. accuracy of predictions)
 
 ###### Benefits for society
 > OpenML provides a useful learning and working environment for students, scientists and practioners.
